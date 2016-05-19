@@ -1,0 +1,58 @@
+.map-contact
+	img.img-responsive(src="assets/img/map-google.jpg")
+.bottom-color
+.container
+	.info-contact
+		.col-sm-7
+			.create-massage
+				h3 leave a massage
+				.box-form
+					form.fbf-form.row(method="POST")
+						.col-sm-6
+							.form-group.clearfix
+								label Name #[sup.fbf-require *]
+								input#name.form-control(type="text")
+							.form-group.clearfix
+								label Email #[sup.fbf-require *]
+								input#email.form-control(type="email")
+							.form-group.clearfix
+								label Telephone
+								input#telephone.form-control(type="text")
+						.col-sm-6
+							.form-group
+								label Comments
+							.clearfix
+							textarea.comments
+							input.btn.fbf-btn.btn-blue.btn-account.pull-left(type="submit" value="SUBMIT")
+						.col-sm-12
+							p.war-form.text-left *Required Field
+		.col-sm-1
+		.col-sm-4
+			.cont-detail
+				h3 contact detail
+				.cont-icon.clearfix
+					.box-icon
+						i.fa.fa-map-marker
+					span 0201 203 2032
+				.cont-icon.clearfix
+					.box-icon
+						i.fa.fa-mobile
+					span 0201 203 2032
+				.cont-icon.clearfix
+					.box-icon
+						i.fa.fa-envelope
+					span 0201 203 2032
+				.cont-icon.clearfix
+					.box-icon
+						i.fa.fa-skype
+					span 0201 203 2032
+		.clearfix
+		.col-sm-7
+			.upload.clearfix
+				h3 upload design file
+				p Proin nec mi quis nisl commodo condimentum sodales sit amet nibh. Etiam non metus sed velit sodales rhoncus. Cras arcu nunc, bibendum sed interdum ut, semper sit amet ligula. Quisque egestas viverra nisl quis semper. Aliquam quis posuere neque. In faucibus cursus lacinia.
+				.box-form.clearfix
+					form.pull-left(method="POST" action="uploadFile" enctype="multipart/form-data")
+						input(type="file" name="file")
+					.pull-right
+						.btn.btn-blue.btn-upload UPLOAD

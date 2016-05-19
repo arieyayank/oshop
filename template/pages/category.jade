@@ -1,0 +1,70 @@
+include ../include/slider.jade
+.container-fluid.page-wrapper
+	.container
+		.row.wrapper-cat-page
+			include ../include/left-sidebar.jade
+			.col-sm-9
+				.main-top-nav
+					.clearfix
+						.pull-left
+							.title-btn-category
+								| Large Feather Flags
+						.pull-right
+							.arrow-pagination
+								span.toleft
+									a(href="#")
+										i.fa.fa-angle-left.fa-2x
+								span.toright
+									a(href="#")
+										i.fa.fa-angle-right.fa-2x
+				.banner-page
+					img.img-responsive(src="assets/img/banner-main.jpg")
+				.draff.clearfix.with-border
+					.pull-left
+						span 18 Subcategories
+					.pull-right
+						select.orderby(name="orderby")
+							option(value="menu_order" selected="selected") Sort By
+							option(value="a-z") A-Z
+							option(value="z-a") Z-A
+				.row.clearfix
+					.col-sm-3
+						include ../include/prod-box-subcategory-nolabel.jade
+					.col-sm-3
+						include ../include/prod-box-subcategory-nolabel.jade
+					.col-sm-3
+						include ../include/prod-box-subcategory.jade
+					.col-sm-3
+						include ../include/prod-box-subcategory-nolabel.jade
+					.col-sm-3
+						include ../include/prod-box-subcategory-nolabel.jade
+					.col-sm-3
+						include ../include/prod-box-subcategory-nolabel.jade
+					.col-sm-3
+						include ../include/prod-box-subcategory-nolabel.jade
+					.col-sm-3
+						include ../include/prod-box-subcategory-nolabel.jade
+					.col-sm-3
+						include ../include/prod-box-subcategory-nolabel.jade
+					.col-sm-3
+						include ../include/prod-box-subcategory-nolabel.jade
+					.col-sm-3
+						include ../include/prod-box-subcategory.jade
+					.col-sm-3
+						include ../include/prod-box-subcategory-nolabel.jade
+	.bg-light.top-sell.row
+		.container
+			.title-desc.clearfix.text-center
+				h3 TOP SELLER PRODUCTS
+			.produck-list
+				.col-aw
+					include ../include/prod-box-subcategory.jade
+				.col-aw
+					include ../include/prod-box-subcategory-nolabel.jade
+				.col-aw
+					include ../include/prod-box-subcategory-nolabel.jade
+				.col-aw
+					include ../include/prod-box-subcategory-nolabel.jade
+				.col-aw
+					include ../include/prod-box-subcategory-nolabel.jade
+include ../include/fast-shipping.jade

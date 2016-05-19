@@ -1,0 +1,198 @@
+.container
+	main.main
+		article.page.hentry
+			header.entry-header
+				h1.entry-title CHECK OUT
+			.row.content
+				.col-sm-9
+					.panel-group.step#accordion
+						.panel.panel-cart
+							.panel-heading#heading01(role="tab")
+								img.label-number(src="assets/img/label-number.png")
+								h4.panel-title
+									a(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse01" aria-expanded="true" aria-controls="collapse01")
+										Collapsible.number 01
+											span.name Checkout Method
+							#collapse01.panel-collapse.collapse.in(role="tabpanel" aria-labelledby="heading01")
+								.panel-body
+									.row
+										.col-sm-6
+											h4.col-sm-12.page-title Checkout as a Guest or Register
+											.line-bottom.clearfix
+											h6.col-sm-12 By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.
+											.col-sm-12
+												form.input-select
+													input(type="radio" name="or" value="guest")
+													span.radio-btn Checkout as Guest
+													.clearfix
+													input(type="radio" name="or" value="register")
+													span.radio-btn Register
+											.line-bottom.clearfix
+											.col-sm-12
+												button.btn.fbf-btn.btn-account.btn-blue.btn-blue-o CONTINUE
+										.col-sm-6
+											.pull-right.clearfix
+												form.fbf-form.row(method="POST")
+													h4.col-sm-12.page-title Register Costumers
+													.line-bottom.clearfix
+													.form-group.clearfix
+														.col-sm-7
+															label Email Address #[sup.fbf-require *]
+															input#Email.form-control(type="text")
+													.form-group.clearfix
+														.col-sm-7
+															label Password #[sup.fbf-require *]
+															input#password.form-control(type="email")
+												.row
+													.line-bottom.clearfix
+												.row
+													.col-sm-6
+														input.btn.fbf-btn.btn-blue.btn-account.pull-left.btn-blue-o(type="submit" value="LOGIN")
+													.col-sm-6
+														p.war-form.text-right.text-red *Required Field
+														a.forgot-pss.pull-right(href="3") Forgot Your Password ?
+						.panel.panel-cart
+							.panel-heading#heading02(role="tab")
+								img.label-number(src="assets/img/label-number.png")
+								h4.panel-title
+									a.collapsed(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse02" aria-expanded="false" aria-control="collapse02")
+										Collapsible.number 02
+											span.name  Billing Information
+							#collapse02.panel-collapse.collapse(role="tabpanel" aria-labelledby="heading02")
+								.panel-body
+									.row
+										.col-sm-9
+											section.main(role="document")
+												form.fbf-form.row(method="POST")
+													.form-group.clearfix
+														.col-sm-6
+															label First Name #[sup.fbf-require *]
+															input#shipfirstName.form-control(type="text")
+														.col-sm-6
+															label Last Name #[sup.fbf-require *]
+															input#shiplastName.form-control(type="text")
+													.form-group.clearfix
+														.col-sm-6
+															label Company Name
+															input#company.form-control(type="text")
+														.col-sm-6
+															label Address Line 1
+															input#add1.form-control(type="text")
+													.form-group.clearfix
+														.col-sm-6
+															label Address Line 2
+															input#addre2.form-control(type="text")
+														.col-sm-6
+															label Subrurb/City #[sup.fbf-require *]
+															input#city.form-control(type="text")
+													.form-group.clearfix
+														.col-sm-6
+															label Country
+															select.form-control
+																option Argentina
+																option Argentina
+																option Argentina
+																option Argentina
+														.col-sm-6
+															label State Province
+															select.form-control
+																option Buenos Aires
+																option Buenos Aires
+																option Buenos Aires
+																option Buenos Aires
+													.form-group.clearfix
+														.col-sm-4
+															label Zip/Postcode
+															input.form-control.small-form(type="text")
+															.input-select
+																input(type="radio" name="shipping" value="this address")
+																span.radio-btn Ship to this address
+																.clearfix
+																input(type="radio" name="shipping" value="different")
+																span.radio-btn Ship to different address 
+													.line-bottom.clearfix
+													.form-group.clearfix.foo-form
+														.col-sm-4
+															input.btn.fbf-btn.btn-blue.btn-account.btn-blue-o(type="submit" value="CONTINUE")
+
+						.panel.panel-cart
+							.panel-heading#heading03(role="tab")
+								img.label-number(src="assets/img/label-number.png")
+								h4.panel-title
+									a.collapsed(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse03" aria-expanded="false" aria-control="collapse03")
+										Collapsible.number 03
+											span.name  Shipping Information
+							#collapse03.panel-collapse.collapse(role="tabpanel" aria-labelledby="heading03")
+								.panel-body
+									.row
+										.col-sm-9
+											section.main(role="document")
+												form.fbf-form.row(method="POST")
+													.form-group.clearfix
+														.col-sm-6
+															label First Name #[sup.fbf-require *]
+															input#shipfirstName.form-control(type="text")
+														.col-sm-6
+															label Last Name #[sup.fbf-require *]
+															input#shiplastName.form-control(type="text")
+													.form-group.clearfix
+														.col-sm-6
+															label Company Name
+															input#company.form-control(type="text")
+														.col-sm-6
+															label Address Line 1
+															input#add1.form-control(type="text")
+													.form-group.clearfix
+														.col-sm-6
+															label Address Line 2
+															input#addre2.form-control(type="text")
+														.col-sm-6
+															label Subrurb/City #[sup.fbf-require *]
+															input#city.form-control(type="text")
+													.form-group.clearfix
+														.col-sm-6
+															label Country
+															select.form-control
+																option Argentina
+																option Argentina
+																option Argentina
+																option Argentina
+														.col-sm-6
+															label State Province
+															select.form-control
+																option Buenos Aires
+																option Buenos Aires
+																option Buenos Aires
+																option Buenos Aires
+													.form-group.clearfix
+														.col-sm-4
+															label Zip/Postcode
+															input.form-control.small-form(type="text")
+													.line-bottom.clearfix
+													.form-group.clearfix.foo-form
+														.col-sm-4
+															input.btn.fbf-btn.btn-blue.btn-account.btn-blue-o(type="submit" value="CONTINUE")
+						.panel.panel-cart
+							.panel-heading#heading04(role="tab")
+								img.label-number(src="assets/img/label-number.png")
+								h4.panel-title
+									a.collapsed(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse04" aria-expanded="false" aria-control="collapse04")
+										Collapsible.number 04
+											span.name  Shipping Method
+							#collapse04.panel-collapse.collapse(role="tabpanel" aria-labelledby="heading04")
+						.panel.panel-cart
+							.panel-heading#heading05(role="tab")
+								img.label-number(src="assets/img/label-number.png")
+								h4.panel-title
+									a.collapsed(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse05" aria-expanded="false" aria-control="collapse05")
+										Collapsible.number 05
+											span.name  Payment Information
+							#collapse05.panel-collapse.collapse(role="tabpanel" aria-labelledby="heading05")
+						.panel.panel-cart
+							.panel-heading#heading06(role="tab")
+								img.label-number(src="assets/img/label-number.png")
+								h4.panel-title
+									a.collapsed(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse06" aria-expanded="false" aria-control="collapse06")
+										Collapsible.number 06
+											span.name  Order Review
+							#collapse06.panel-collapse.collapse(role="tabpanel" aria-labelledby="heading06")

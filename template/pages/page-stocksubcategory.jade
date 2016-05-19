@@ -1,0 +1,82 @@
+.bg-stock
+	.main-head.bg-light
+		.container
+			.col-sm-1
+			.col-sm-10
+				a.back-arrow.pull-left(href="#")
+					i.fa.fa-arrow-circle-left
+					span BACK TO STOCK ITEMS CATEGORIES
+				ol.breadcrumb.dealership.pull-right.bg-light
+					li.active.blue AUTO DEALERSHIPS
+					li
+						a(href="#") FEATHER FLAGS
+			.col-sm-1
+	.container.produck-list
+		.col-sm-1
+		.col-sm-10
+			.banner-image.clearfix
+				img.img-responsive(src="assets/img/banner-subcategories.jpg")
+			.draff.clearfix
+				.pull-left
+					span 18 Subcategories
+				.pull-right
+					select.orderby(name="orderby")
+						option(value="menu_order" selected="selected") Sort By
+						option(value="a-z") A-Z
+						option(value="z-a") Z-A
+			.row.clearfix
+				.col-sm-3
+					include ../include/prod-box-subcategory.jade
+				.col-sm-3
+					include ../include/prod-box-subcategory-nolabel.jade
+				.col-sm-3
+					include ../include/prod-box-subcategory.jade
+				.col-sm-3
+					include ../include/prod-box-subcategory-nolabel.jade
+				.col-sm-3
+					include ../include/prod-box-subcategory-nolabel.jade
+				.col-sm-3
+					include ../include/prod-box-subcategory-nolabel.jade
+				.col-sm-3
+					include ../include/prod-box-subcategory-nolabel.jade
+				.col-sm-3
+					include ../include/prod-box-subcategory.jade
+			.clearfix
+			.btn.btn-page.btn-back.pull-left
+				| PREV PAGE
+			.btn.btn-page.btn-next.pull-right
+				| NEXT PAGE
+		.col-sm-1
+	.bg-light
+		.container
+			.col-sm-1
+			.col-sm-10
+				.title-desc
+					h3 STAND OPTIONS
+					p Choose you STAND and get FREE with any Feather Flag!
+				.prod-stand
+					.col-sm-3
+						include ../include/side-stand.jade
+					.col-sm-3
+						include ../include/side-stand.jade
+					.col-sm-3
+						include ../include/side-stand.jade
+					.col-sm-3
+						include ../include/side-stand.jade
+			.col-sm-1
+	.bg-light.top-sell
+		.container
+			.title-desc.clearfix
+				h3 TOP SELLER PRODUCTS
+			.produck-list
+				.col-aw
+					include ../include/prod-box-subcategory-nolabel.jade
+				.col-aw
+					include ../include/prod-box-subcategory-nolabel.jade
+				.col-aw
+					include ../include/prod-box-subcategory.jade
+				.col-aw
+					include ../include/prod-box-subcategory-nolabel.jade
+				.col-aw
+					include ../include/prod-box-subcategory.jade
+include ../include/fast-shipping.jade

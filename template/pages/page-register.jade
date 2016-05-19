@@ -1,0 +1,84 @@
+.bottom-color
+.container-fluid.page-wrapper
+	.container
+		h2.page-title Created an account
+		section.main(role="document")
+			form.fbf-form.row(method="POST")
+				h3.section-title.col-sm-12 Personal Information
+				.line-bottom.clearfix
+				.form-group.clearfix
+					.col-sm-4
+						label First Name #[sup.fbf-require *]
+						input#firstName.form-control(type="text")
+					.col-sm-4
+						label Last Name #[sup.fbf-require *]
+						input#lastName.form-control(type="text")
+				.form-group.clearfix
+					.col-sm-4
+						label Email Address #[sup.fbf-require *]
+						input#Email.form-control(type="email")
+				h3.section-title.col-sm-12 Login Information
+				.line-bottom.clearfix
+				.form-group.clearfix
+					.col-sm-4
+						label Password #[sup.fbf-require *]
+						input#password.form-control(type="password")
+					.col-sm-4
+						label Retype Password #[sup.fbf-require *]
+						input#rePassword.form-control(type="password")
+				.form-group.clearfix
+					.col-sm-4
+						label type letter below #[sup.fbf-require *]
+						input#capcha.form-control(type="text")
+				.form-group.clearfix
+					.col-sm-4
+						a#reCap.pull-left.reload-cap #[i.fa.fa-repeat.fa-2x]
+						img.img-responsive.pull-left(src="assets/img/capcha.jpg" alt="captcha")
+				h3.section-title.col-sm-12 Shipping Information
+				.line-bottom.clearfix
+				.form-group.clearfix
+					.col-sm-4
+						label First Name #[sup.fbf-require *]
+						input#shipfirstName.form-control(type="text")
+					.col-sm-4
+						label Last Name #[sup.fbf-require *]
+						input#shiplastName.form-control(type="text")
+				.form-group.clearfix
+					.col-sm-4
+						label Company #[sup.fbf-require *]
+						input#company.form-control(type="text")
+					.col-sm-4
+						label Address Line 1
+						input#add1.form-control(type="text")
+				.form-group.clearfix
+					.col-sm-4
+						label Address Line 2
+						input#addre2.form-control(type="text")
+					.col-sm-4
+						label Subrurb/City #[sup.fbf-require *]
+						input#city.form-control(type="text")
+				.form-group.clearfix
+					.col-sm-4
+						label Country
+						select.form-control
+							option Argentina
+							option Argentina
+							option Argentina
+							option Argentina
+					.col-sm-4
+						label State Province
+						select.form-control
+							option Buenos Aires
+							option Buenos Aires
+							option Buenos Aires
+							option Buenos Aires
+				.form-group.clearfix
+					.col-sm-4
+						label Zip/Postcode
+						input.form-control.small-form(type="text")
+					.col-sm-4
+						p.war-form.text-right *Required Field
+				.line-bottom.clearfix
+				.form-group.clearfix.foo-form
+					.col-sm-4
+						input.btn.fbf-btn.btn-blue.btn-account(type="submit" value="Created New Account")

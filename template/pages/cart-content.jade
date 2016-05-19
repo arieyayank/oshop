@@ -1,0 +1,67 @@
+.container
+	main.main.clearfix.main-content
+		article.page.hentry
+			header.entry-header
+				h1.entry-title Cart
+			.entry-content(itemprop='mainContentOfPage')
+				.col-sm-9.cart-boxed
+					form(method='post', action='')
+						table.shop_table.shop_table_responsive.cart.table(cellspacing='0')
+							thead
+								tr
+									th.product-remove
+									th.product-thumbnail Product Name
+									th.product-name Unit Price
+									th.product-price
+									th.product-quantity.text-center QTY
+									th.product-subtotal Sub Total
+							tbody
+								tr.cart_item
+									td.product-remove
+										a.remove(data-product="")
+											span.but-circle
+												i.fa.fa-remove
+									td.product-thumbnail
+										a(href="#")
+											img.attachment-shop_thumbnail.size-shop_thumbnail.wp-post-image(src="assets/img/flag.jpg" width='92', height='82')
+									td.product-name(data-title='Product')
+										a(href="#") 10.2' x 2.7' Feather Flag
+									td.product-price(data-title='Price')
+									td.product-quantity(data-title='Quantity')
+										.quantity.col-sm-4.col-sm-offset-4
+											.clearfix.count-qty
+												button.btn.col-xs-3 +
+												input.col-xs-6.text-center(type="text" value="1")
+												button.btn.col-xs-3 -
+									td.product-subtotal(data-title='Total')
+										span.amount $45
+								tr.highlight 
+								tr.cart_item
+									td.product-remove
+										a.remove(data-product="")
+											span.but-circle
+												i.fa.fa-remove
+									td.product-thumbnail
+										a(href="#")
+											img.attachment-shop_thumbnail.size-shop_thumbnail.wp-post-image(src="assets/img/flag.jpg" width='92', height='82')
+									td.product-name(data-title='Product')
+										a(href="#") 10.2' x 2.7' Feather Flag
+									td.product-price(data-title='Price')
+									td.product-quantity(data-title='Quantity')
+										.quantity.col-sm-4.col-sm-offset-4
+											.clearfix.count-qty
+												button.btn.col-xs-3 +
+												input.col-xs-6.text-center(type="text" value="1")
+												button.btn.col-xs-3 -
+									td.product-subtotal(data-title='Total')
+										span.amount $45
+						.clearfix
+							.row
+								.col-sm-4
+									button.btn.btn-blue-o.btn-block Continue Shopping
+								.col-sm-8
+									.pull-right
+										button.btn.btn-blue-o clear cart
+										button.btn.btn-blue-o update cart
+				.col-sm-3
+					include ../include/sidebar-cart.jade

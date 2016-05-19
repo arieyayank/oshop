@@ -1,0 +1,30 @@
+#carousel-primer.carousel.slide(data-ride='carousel')
+	// Wrapper for slides
+	.carousel-inner(role='listbox')
+		.item.active
+			img(src='assets/img/slider/1.jpg', alt='...')
+			.carousel-caption
+				.desc
+					.text-1
+						span NEW MODEL RELEASED
+					.text-2
+						span 12x12 FEATHER FLAGS
+					a.text-3(href="#") READ MORE #[i.fa.fa-long-arrow-right]
+		.item
+			img(src='assets/img/slider/1.jpg', alt='...')
+			.carousel-caption
+				.desc
+					.text-1
+						span NEW MODEL RELEASED
+					.text-2
+						span 12x12 FEATHER FLAGS
+					a.text-3(href="#") READ MORE #[i.fa.fa-long-arrow-right]
+	// Controls
+	.control-slide
+		a.left.control-chevron(href='#carousel-primer', role='button', data-slide='prev')
+			i.fa.fa-chevron-left(aria-hidden='true')
+			span.sr-only Previous
+		a.right.control-chevron(href='#carousel-primer', role='button', data-slide='next')
+			i.fa.fa-chevron-right(aria-hidden='true')
+			span.sr-only Next
+.bottom-color

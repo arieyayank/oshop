@@ -1,0 +1,35 @@
+.bottom-color
+.container-fluid.page-wrapper
+	.container
+		h2.page-title LOGIN OR CREATED AN ACCOUNT
+		.clearfix
+		.row
+			.col-sm-6
+				.box-form.pull-left.clearfix
+					h4.page-title New Costumers
+					.row
+						.line-bottom.clearfix
+					p By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.
+					input.btn.fbf-btn.btn-blue.btn-account.pull-left(type="submit" value="CREATED NEW ACCOUNT")
+					.or-btn.pull-left OR
+					input.btn.fbf-btn.btn-blue.btn-account.btn-continue.pull-right(type="submit" value="CONTINUE AS GUEST")
+			.col-sm-6
+				.box-form.pull-right.clearfix
+					form.fbf-form.row(method="POST")
+						h4.page-title.col-sm-12 Register Costumers
+						h6.col-sm-12 If you have an account with us, please log in.
+						.line-bottom.clearfix
+						.form-group.clearfix
+							.col-sm-7
+								label Email Address #[sup.fbf-require *]
+								input#Email.form-control(type="text")
+						.form-group.clearfix
+							.col-sm-7
+								label Password #[sup.fbf-require *]
+								input#password.form-control(type="email")
+							.col-sm-5
+								p.war-form.text-right *Required Field
+					.row
+						.line-bottom.clearfix
+					input.btn.fbf-btn.btn-blue.btn-account.pull-left(type="submit" value="LOGIN")
+					a.forgot-pss.pull-right(href="3") Forgot Your Password ?

@@ -1,0 +1,72 @@
+header.static-top.header-default.fbf-heder.banner#basetop
+	.fbf-top-nav.clearfix
+		.container
+			.row
+				.col-sm-5.col-xs-12
+					p
+						i.fa.fa-tags
+						| Up to 25% off feather flags-click here to see more. Ends April 17  
+						a(href="" title="") Learn More
+				.col-sm-7.col-xs-12
+					ul.top-tools
+						li 
+							span
+								img.icon(src="assets/img/icon/phone-ic.png" alt="phone")
+							| call us today 865 548 755
+						li
+							i.fa.fa-clock-o
+							| hours: monday-friday 09.00 - 4.30 PST
+						li.language
+							select
+								option(name="lang" value="Engglis") ENG
+								option(name="lang" value="Netherland") NED
+	.main-header.clearfix
+		.container
+			.row
+				.col-sm-4.header-logo.col-xs-6
+					h1.navbar-logo
+						a(href="/") #[img.img-responsive(src="assets/img/logo.png")]
+				.pull-right
+					.thesearch.col-sm-6
+						.input-group.input-search
+							input.form-control.search-addon.text-search(type="text" placeholder="Search Product.." aria-describedby="basic-addon1")
+							span.input-group-addon.search-addon.icon-search#basic-addon1 #[i.fa.fa-search]
+					.dropdown.btn.btn-dark.cart-contents.cart.col-sm-3
+						a.dropdown-toggle.cart-color(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false")
+							| cart #[span 12 #[i.fa.fa-shopping-cart]]
+						ul.dropdown-menu.row.mini-cart
+							li
+								.clearfix
+									.col-xs-3
+										img.img-responsive(src="assets/img/flag.jpg")
+									.col-xs-7
+										a(href="#") 10.2' x 2.7' Feather Flag
+										span.blue 1x$40.00
+									.col-xs-2
+										a.remove(data-product="")
+											span.but-circle
+												i.fa.fa-remove
+							li
+								.clearfix
+									.col-xs-3
+										img.img-responsive(src="assets/img/flag.jpg")
+									.col-xs-7
+										a(href="#") 10.2' x 2.7' Feather Flag
+										span.blue 1x$40.00
+									.col-xs-2
+										a.remove(data-product="")
+											span.but-circle
+												i.fa.fa-remove
+							li.foo-mini-cart
+								.clearfix
+									.col-xs-6
+										button.btn.btn-blue-o.btn-block Checkout
+									.col-xs-6
+										button.btn.btn-blue-o.btn-block update cart
+					.log-in.col-sm-3
+						.btn.btn-dark.cart-contents
+							a.log(href="#") log out #[img.ic-14(src="assets/img/icon/user-ic.png")]
+		.container
+			nav.navbar-inverse.fbf-navbar
+				.clearfix
+					include main-menu.jade

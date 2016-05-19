@@ -1,0 +1,74 @@
+.cart-collaterals
+	.clearfix
+		.panel-group#cart-panel
+			.panel-con
+				.wrapper-panel
+					.panel-heading
+						.panel-title
+							h4
+								a.accordion-toggle(data-toggle="collapse" data-parent="#accordion" href="#pan-one") Discount Codes
+								i.indicator.fa.fa-sort-desc.pull-right
+					.panel-collapse.collapse#pan-one
+						.panel-body
+							.coupon
+								input.input-text#coupon_code.col-xs-8(type="text" placeholder="Coupon code" value="" name="coupon_code")
+								input.button.btn-blue.btn.col-xs-4(type="submit" value="Enter" name="apply_coupon")
+				.wrapper-panel
+					.panel-heading
+						.panel-title
+							h4
+								a.accordion-toggle(data-toggle="collapse" data-parent="#accordion" href="#pan-two") Istimate Shipping
+								i.indicator.fa.fa-sort-desc.pull-right
+					.panel-collapse.collapse#pan-two
+						.panel-body
+							.shipping-calc
+								form.woocommerce-shipping-calculator
+									small.blue Total Items: 1  Weight: 0lbs
+									small.blue Amount: $13.99
+									section.shipping-calculator-form
+										#calc_shipping_country_field.form-row.form-row-wide
+											table.fbf-table.table.table-responsive
+												tbody
+													tr
+														td Country
+														td
+															include country-opt.jade
+													tr
+														td State/province
+														td
+															include province-opt.jade
+													tr
+														td Post/Zip COde
+														td 
+															input#calc_shipping_postcode.input-text(type="text")
+													tr
+														td(colspan="2")
+															button.btn.btn-block.btn-inverse Shipping Quotes #[span.blue UNITED STATES]
+											table.ltable.table-bordered
+												thead
+													tr
+														th Available Shipping Method
+														th Rates
+												tbody
+													tr
+														td Table Rate (1 x 3.00lbs) (Best Way)
+														td #[span.blue $10.50]
+				.wrapper-panel
+					.panel-heading
+						.panel-title
+							h4 Cart Total
+							table.table.table-striped
+								thead
+									tr
+										th 
+										th 
+								tbody
+									tr
+										td Subtotal
+										td.text-right $159.00
+									tr
+										td Subtotal
+										td.text-right #[strong $159.00]
+									tr
+										td(colspan="2")
+											button.btn.btn-blue.btn-block Proceed to checkout
