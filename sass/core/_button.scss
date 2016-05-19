@@ -1,0 +1,21 @@
+.btn {
+	color:$fbf-light;
+	text-decoration:none;
+	padding:5px 10px;
+	border-radius:0px;
+	font-size:1.2em;
+}
+
+.btn-blue {
+	@include button-bg($fbf-blue);
+}
+.btn-dark{
+	@include button-bg($fbf-dark-gray);
+	&:hover{
+		@include button-bg($fbf-dark-hover);
+	}
+}
+.btn-light{
+	@include button-bg($fbf-light-blue);
+	color: $fbf-blue;
+}

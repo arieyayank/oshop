@@ -1,0 +1,140 @@
+.bg-stock{
+	background-color: $fbf-light-maho;
+}
+.bg-light{
+	background-color: $fbf-light;
+}
+.btn-page{
+	font-size: 14px;
+	padding: 10px;
+	background-color: $fbf-button-page;
+	min-width: 110px;
+	color: $fbf-light-maho;
+	&:hover{
+		color: $fbf-text-crash;
+	}
+}
+.main-head{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	.back-arrow{
+		text-decoration: none;
+		color: $fbf-text-crash;
+		i{
+			color: $fbf-blue;
+			margin-right: 4px;
+			font-size: 14px;
+		}
+	}
+	.breadcrumb{
+		margin: 0;
+		padding: 0;
+	}
+	.dealership{
+		li{
+			a{
+				color: $fbf-text-crash;
+				text-decoration: none;
+			}
+		}
+		li.blue{
+			color: $fbf-blue;
+		}
+	}
+}
+.blue{
+	color: $fbf-blue;
+}
+.title-desc{
+	margin: 24px 0;
+	text-align: center;
+	h3{
+		font-weight: 700;
+	}
+}
+.produck-list{
+	.draff{
+		padding: 12px 0 4px;
+		border-bottom: 1px solid $fbf-box;
+		margin-bottom: 12px;
+		.orderby{
+			background-color: transparent;
+			border: none;
+		}
+	}
+}
+.top-sell{
+	margin-top: 30px;
+}
+.prod-stand{
+	img{
+		border: 8px solid $fbf-light-maho;
+		margin-bottom: 16px;
+	}
+	.title{
+		color: $fbf-blue;
+	}
+	p{
+		color: $fbf-text-crash;
+	}
+}
+.produck-list{
+	margin-bottom: 12px;
+	text-align: center;
+	text-align: -webkit-center;
+}
+.box-prod{
+	padding: 4px;
+	border: 1px solid $fbf-box;
+	background-color: $fbf-light;
+	margin-bottom: 24px;
+	text-align: center;
+	&:hover{
+		padding: 4px;
+		box-shadow: 0 0 0 4px $fbf-blue inset;
+		border: 1px solid $fbf-blue;
+		transition: all ease 0.3s;
+	}
+	.discount-label {
+		left: 6%;
+		position: absolute;
+		top: 7%;
+		z-index: 2;
+	}
+	.sale {
+		color: $fbf-light;
+		font-size: 16px;
+		font-weight: 700;
+		left: 13%;
+		position: absolute;
+		top: 9%;
+		z-index: 3;
+	}
+	.prod-name{
+		font-size: 14px;
+		font-weight: 700;
+		margin-top: 12px;
+		.price{
+			font-size: 18px;
+			margin-top: 12px;
+			color: $fbf-blue;
+		}
+	}
+	.btn-viewcart{
+		color: $fbf-text-crash;
+		font-size: 14px;
+		text-align: center;
+		border: 1px solid $fbf-box;
+		background-color: $fbf-light;
+		margin: 12px auto;
+		i{
+			margin-right: 4px;
+		}
+		&:hover{
+			background-color: $fbf-blue;
+			color: $fbf-light;
+			border: 1px solid $fbf-blue;
+			transition: all 0.3s ease;
+		}
+	}
+}

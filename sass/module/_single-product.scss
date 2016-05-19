@@ -1,0 +1,97 @@
+.product_title{
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.product{
+	margin-right: 32px;
+	.woocommerce-main-image{
+		margin-bottom: 15px;
+		i{
+			position: absolute;
+			color: $fbf-box;
+			top: 68%;
+			left: 88%;
+		}
+	}
+	.image-additional{
+		.attachment-shop_thumbnail{
+			border: 1px solid $fbf-box;
+			&:hover , &.active{
+				border-color: $fbf-gray;
+			}
+		}
+	}
+}
+.custom-flag{
+	h4{
+		color: $fbf-light;
+		background-color: $fbf-blue;
+		border: 1px solid $fbf-blue;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding: 12px 0;
+		font-weight: 700;
+	}
+	.custom-flag-inner{
+		border: 1px solid $fbf-box;
+		border-top: 1px solid $fbf-blue;
+		background-color: $fbf-light;
+		padding: 4px 10px;
+		margin-bottom: 50px;
+		.fbf-form{
+			select{
+				width: 100%;
+				padding: 4px 2px;
+			}
+			.product-hardware{
+				margin-top: 6px;
+				margin-bottom: 6px;
+				img{
+					width: 85%;
+				}
+			}
+			.cart{
+				border-top: 1px solid $fbf-box;
+				padding-top: 4px;
+				.margin-cart{
+					margin-left: -3px;
+					margin-right: -3px;
+				}
+				.padding-cart{
+					padding: 0 3px;
+				}
+				.quantity{
+					input{
+						width: 55%;
+						text-align: center;
+					}
+				}
+				.total-your-price{
+					color: $fbf-blue;
+					font-weight: 700;
+					margin-top: 2px;
+				}
+				.single_add_to_cart_button{
+					width: 100%;
+					font-size: 14px;
+					margin-top: 24px;
+					font-weight: 700;
+					color: $fbf-light;
+				}
+				.share{
+					background-color: $fbf-box;
+					text-align: center;
+					padding: 4px 0;
+					margin-top: 24px;
+					i{
+						margin: 5px;
+						color: $fbf-gray;
+						&:hover{
+							color: $fbf-dark-gray;
+						}
+					}
+				}
+			}
+		}
+	}
+}

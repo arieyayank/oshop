@@ -1,0 +1,49 @@
+.wrapper-cat-page{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.main-top-nav {
+	margin: 2px 0;
+	.title-btn-category{
+		background: $fbf-light;
+		color: $fbf-dark;
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 10px 18px;
+	}
+	.arrow-pagination {
+		margin: 6px 0;
+		span{
+			float: left;
+			margin-right: 8px;
+			a{
+				color: $fbf-gray;
+				padding: 6px 8px;
+				text-align: center;
+				background: $fbf-light;
+				display: table;
+				height: 27px;
+				text-align: center;
+				width: 40px;
+				&:hover{
+					background: $fbf-gray;
+					color: $fbf-light;
+				}
+			}
+		}
+	}
+}
+.banner-page{
+	display: block;
+	margin: 20px auto;
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+.with-border{
+	border-bottom: 1px solid $fbf-gray;
+	margin-bottom: 20px;
+	padding-bottom: 4px;
+}

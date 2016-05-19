@@ -1,0 +1,106 @@
+.section-lighting{
+	background: $fbf-light-maho;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.wrapper-title{
+	margin: 20px 0 40px;
+	h3.title-section{
+		font-size: 36px;
+		font-weight: bold;
+	}
+	p{
+		font-size: 24px;
+		color: $fbf-text-minor;
+		font-weight: 300;
+	}
+}
+.section-attribute{
+	.container{
+		background: url('../img/women-computer.jpg') no-repeat left bottom;
+		padding-bottom: 50px;
+		padding-top: 30px;
+		.attribute-content{
+			margin: 20px 0;
+			.listing-fbf{
+				margin-bottom: 20px;
+				margin-top: 20px;
+				h3{
+					margin-bottom: 30px;
+				}
+				p{
+					font-size: 16px;
+					a{
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}
+.liner-space{
+	background: $fbf-light-maho;
+	display: block;
+	height: 100px;
+	width: 100%;
+	margin: 0;
+}
+.star-rating{
+	color: $fbf-blue;
+	*{
+		margin-right: 4px;
+	}
+}
+.user-title{
+	font-weight: bold;
+	font-size: 18px;
+	span{
+		font-weight: 300;
+	}
+}
+.section-rating{
+	.container{
+		background: $fbf-light;
+		padding-bottom: 50px;
+		padding-top: 30px;
+		.wrapper-recent-rate{
+			margin: 20px 0 50px;
+			font-size: 16px;
+			.wrapper-rate{
+				margin: 20px auto;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+}
+.section-banner-bottom{
+	background: $fbf-dark-blue;
+	color: $fbf-light;
+	padding-top: 2.5em;
+	padding-bottom: 2.5em;
+	font-size: 16px;
+	h2{
+		font-size: 30.8px;
+		font-weight: bold;
+	}
+	.learn-call{
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	.icon-banner-bottom{
+		padding: 20px 0;
+		img{
+			display: block;
+			float: none;
+			margin: 0 auto;
+		}
+	}
+}
+@media(max-width: 360px){
+	.section-attribute{
+		.container{
+			background-size: 100%;
+		}
+	}
+}

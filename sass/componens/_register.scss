@@ -1,0 +1,70 @@
+.page-title{
+	font-weight: bold;
+}
+.line-bottom{
+	border-bottom: 1px solid $fbf-box;
+	margin: 0 15px 15px;
+}
+.btn-account{
+	padding: 14px 20px;
+	font-size: 16px;
+	margin-bottom: 55px;
+	min-width: 225px;
+	&:hover{
+		color: $fbf-light;
+	}
+}
+.fbf-form{
+	.form-group{
+		label{
+			.fbf-require{
+				color: $fbf-pink;
+			}
+		}
+		.form-control{
+			border-radius: 0px;
+			&:focus{
+				box-shadow: none;
+				border-color: $fbf-dark-gray;
+			}
+		}
+		.reload-cap{
+			color: $fbf-blue;
+			margin: 10px 42px;
+			cursor: pointer;
+		}
+	}
+	.war-form{
+		margin: 30px auto;
+		color: $fbf-pink;
+	}
+}
+.text-red{
+	color: $fbf-pink;
+}
+.btn-continue{
+	background-color: $fbf-dark-gray;
+	&:hover{
+		background-color: $fbf-dark-hover;
+	}
+}
+.box-form{
+	border: 1px solid $fbf-box;
+	width: 98%;
+	padding: 12px;
+	margin-top: 12px;
+	margin-bottom: 40px;
+	.btn-account{
+		margin-bottom: 6px;
+		margin-top: 0px;
+	}
+	.or-btn{
+		font-size: 18px;
+		font-weight: bold;
+		margin: 12px 37px;
+	}
+	.forgot-pss{
+		margin-top: 15px;
+		color: $fbf-blue;
+	}
+}

@@ -1,0 +1,54 @@
+.map-contact{
+	width: 100%;
+}
+.create-massage{
+	.box-form{
+		textarea.comments{
+			border: 1px solid $fbf-box;
+			height: 108px;
+			margin: -17px 0 21px;
+			width: 98%;
+			max-width: 98%;
+			padding: 6px 12px;
+			transition: border-color 0.15s ease-in-out 0s;
+			&:focus{
+				border-color: $fbf-dark-gray;
+			}
+		}
+	}
+}
+.info-contact{
+	.create-massage , .cont-detail , .upload{
+		h3{
+			text-transform: uppercase;
+		}
+	}
+	.cont-detail{
+		.cont-icon{
+			margin-top: 18px;
+			margin-bottom: 18px;
+			.box-icon{
+				background-color: $fbf-blue;
+				color: $fbf-light;
+				display: inline;
+				margin-right: 8px;
+				text-align: center;
+				display: inline-block;
+				line-height: 1.3;
+				vertical-align: middle;
+				width: 32px;
+				height: 32px;
+				font-size: 24px;
+			}
+		}
+	}
+}
+.upload{
+	form{
+		margin: 4px auto;
+	}
+}
+.btn-upload{
+	font-size: 16px;
+	min-width: 100px;
+}

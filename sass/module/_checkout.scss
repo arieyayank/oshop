@@ -1,0 +1,58 @@
+.step{
+	.panel-cart{
+		box-shadow: none;
+		border-radius: 0;
+		margin-bottom: 8px;
+		.panel-heading{
+			padding: 0;
+			border: 1px solid $fbf-dark;
+			border-radius: 0;
+			.panel-title{
+				margin: 14px 0;
+				z-index: 2;
+				position: absolute;
+				display: inline;
+				left: 40px;
+				font-size: 18px;
+				font-weight: 700;
+				.number{
+					display: inline;
+				}
+				.name{
+					margin-left: 56px;
+				}
+			}
+		}
+	}
+}
+.checkout-page{
+	.content{
+		margin-bottom: 55px;
+	}
+	.panel-body{
+		.input-select{
+			margin-bottom: 38px;
+			input{
+				margin-top: 8px;
+			}
+			.radio-btn{
+				margin-left: 10px;
+				font-weight: 700;
+			}
+		}
+		.war-form{
+			font-size: 12px;
+		}
+	}
+	#collapseTwo{
+		.input-select{
+			margin: 14px 0;
+		}
+	}
+}
+.btn-blue-o{
+	background-color: $fbf-light;
+	border: 2px solid $fbf-blue;
+	color: $fbf-blue;
+	margin-bottom: 24px !important;
+}

@@ -1,0 +1,31 @@
+.shipping-page{
+	.bg-pict{
+		background: url('../img/background-shipping.jpg') no-repeat center;
+		height: 459px;
+		width: 100%;
+		h2{
+			color: $fbf-light;
+			margin: -40px auto;
+		}
+		img{
+			margin: 0 auto;
+		}
+	}
+	.content-ship{
+		margin-top: 24px;
+		margin-bottom: 24px;
+		.icon-shipping{
+			background-color: $fbf-blue;
+			padding: 8px;
+			float: right;
+			margin-right: -10px;
+		}
+		h3{
+			margin-bottom: 20px;
+			font-weight: 700;
+		}
+		.list-flag{
+			font-weight: 700;
+		}
+	}
+}
